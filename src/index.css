@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.formField {
+    @apply flex flex-col
+}
+
+.labals {
+    @apply text-right mb-2 text-[#555555] text-sm font-light
+}
+
+.uncompleted {
+    @apply w-[300px] h-[30px] rounded-md px-3 border border-solid border-red-700 transition-all duration-200 ease-in focus:border-[#1a73e8] focus:border focus:border-solid
+}
+
+.formInput {
+    @apply w-[300px] h-[30px] rounded-md px-3 border border-solid border-slate-500 transition-all duration-200 ease-in focus:border-[#1a73e8] focus:border focus:border-solid
+}
+
+.formLabal {
+    @apply mb-1 mr-1 text-lg font-extralight
+}
+
+.errorSpan {
+    @apply text-red-700 font-extralight text-xs mt-2
+}
+
+.transition200 {
+    @apply transition-all duration-200 ease-out
+}
